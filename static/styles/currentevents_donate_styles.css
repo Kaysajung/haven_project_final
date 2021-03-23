@@ -1,4 +1,4 @@
-* {
+*{
   font-family: 'Open Sans';
 }
 body {
@@ -37,6 +37,7 @@ body {
 }
 
 .header {
+  min-width: 200px;
   width: 40%;
   text-align: center;
   padding: 8px 10px;
@@ -90,7 +91,7 @@ body {
   margin: 30px auto 15px;
   border-color: #FFD36E;
   width: calc(70% + 60px);
-  max-width: 1170px;
+  max-width: 1070px;
   max-height: 500px;
   height: 100vw;
   overflow: hidden;
@@ -201,6 +202,7 @@ body {
 
 .donate-div {
   width: 65%;
+  min-width: 225px;
   padding: 30px 20px 0;
   max-width: 800px;
   margin: 0 auto 20px;
@@ -263,7 +265,7 @@ body {
   }
   .header h2 {
     font-size: 26px;
-    padding: 10px 15px;
+    padding: 10px 50px;
   }
   .calendar-box {
     max-height: 900px;
@@ -387,7 +389,7 @@ body {
   }
   .header h2 {
     font-size: 36px;
-    padding: 12px 18px;
+    padding: 12px 70px;
   }
   .calendar-box {
     width: calc(70% + 100px);

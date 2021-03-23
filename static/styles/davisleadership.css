@@ -43,25 +43,24 @@ body {
 
 
 .LDSP {
-      position: relative;
-      margin-left: 0%;
-      /* right: 57.07%; */
-      margin-top: 7.11%;
-      /* bottom: 86.82%; */
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      display: flex;
-      /* align-items: center; */
-      text-align: center;
-      color: #000000;
-      padding: 2% 12%;
-      width: 20%;
-      background-color: #FFD36E;
-      box-sizing: unset;
-  }
+    position: relative;
+    margin-left: 0%;
+    /* right: 57.07%; */
+    margin-top: 7.11%;
+    /* bottom: 86.82%; */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    color: #000000;
+    padding: 2% 12%;
+    width: 20%;
+    background-color: #FFD36E;
+    box-sizing: unset;
+}
 
   .davis_leadership {
     margin-left: 10%;
@@ -147,8 +146,6 @@ body {
       /* right: 57.07%; */
       margin-top: 7.11%;
       /* bottom: 86.82%; */
-
-      font-family: Roboto;
       font-style: normal;
       font-weight: normal;
       font-size: 36px;
