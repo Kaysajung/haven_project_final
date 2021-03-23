@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="backend.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/backend.css">
+    <title>Haven Project | Cart</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+          <img src="../static/assets/logo.png" alt="icon" width="200">    
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end"  id="navbarNavDropdown">
+          
+        <ul class="navbar-nav">
+            
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/aboutus">Founders and Leaders</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Leadership
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/davisleadership">Davis</a>
+                <a class="dropdown-item" href="/ndhsleadership">NDHS</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Events
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/pastevents">Past</a>
+                <a class="dropdown-item" href="/currentevents">Current</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Media
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/pictures">Pictures</a>
+                <a class="dropdown-item" href="/videos">Videos</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/merch">Merch </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donate">Donate </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+          <li class="nav-item" href="/cart">
+              <img src="../static/assets/shoppingcart.png" alt="icon" width="50" height="50">   
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class = "container-1">
+
+      <div class = "title">
+        <div class = "rectangleFrame">CART</div>
+      </div>
+      
+
+      <div class = "payment_form_body">
+
+        <div class = "cart-yellow-box">
+          <div class = "yellow-box">
+
+            <div class="payment-form-header">
+              <p>Your Information</p>
+            </div>
+
+            <div id = "cart-form">
+              <form id = "cart-form-id" method="post" action="payment-form-process.php" class = "cart-form-class">
+
+              <div class = "cart-form-group">
+                <label for="fname" class="cart-label">Name<span style="color:red">*</span></label></label> 
+
+                <input type="text" id="fname" name="fname" class="cart-form-control fname-box" placeholder="First Name" required>
+                <input type="text" id="lname" name="lname" class="cart-form-control lname-box" placeholder="Last Name" required>
+              </div>
+
+              <div class = "cart-form-group">
+                <label for="Email" class="cart-label">Email<span style="color:red">*</span></label></label>
+                
+                <input type="email" id="Email" name="Email" class="cart-form-control email-box" required>
+              </div>
+            
+              <div class = "cart-form-group">
+                <label for="Phone" class="cart-label">Phone</label>
+
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" class="phone-box cart-form-control">
+              </div>
+
+              <button type="submit" class="submit-form submit-button" value="Submit">Submit</button>
+            </form>
+
+            <div class = "total_pay_box">
+              <div class = "total_box">
+                <!-- <p>TOTAL: $0.00</p> -->
+              </div>
+              <div class = "pay_box">
+                <!-- <p>Please Pay $0.00 to </p> -->
+              </div>
+
+              <div class = "icons">
+                <a href = "https://venmo.com/"> <img src = "../static/assets/venmo.png" alt = "venmo" class = "venmo_icon"></a>
+                <a href = "https://www.paypal.com/us/home"> <img src = "../static/assets/paypal.png" alt = "paypal" class = "paypal_icon"></a>
+              </div>
+            </div>
+
+          </div>
+          </div>
+      </div>
+    </div>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

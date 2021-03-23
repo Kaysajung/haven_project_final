@@ -22,10 +22,6 @@ def home():
 def aboutus():
     return render_template('aboutus.html')
 
-@app.route('/cart',  methods = ['GET','POST'])
-def cart():
-    return render_template('cart.html')
-
 @app.route('/contact',  methods = ['GET','POST'])
 def contact():
     return render_template('contact.html')
@@ -41,6 +37,18 @@ def davisleadership():
 @app.route('/donate',  methods = ['GET','POST'])
 def donate():
     return render_template('donate.html')
+
+@app.route('/item1',  methods = ['GET','POST'])
+def item1():
+    return render_template('item1.html')
+    
+@app.route('/item2',  methods = ['GET','POST'])
+def item2():
+    return render_template('item2.html')
+
+@app.route('/merch',  methods = ['GET','POST'])
+def merch():
+    return render_template('merch.html')
 
 @app.route('/ndhsleadership',  methods = ['GET','POST'])
 def ndhsleadership():
@@ -59,3 +67,15 @@ def videos():
     return render_template('videos.html')
 
 
+
+
+
+
+
+@app.route('/cart1',  methods = ['GET','POST'])
+def cart1():
+    return render_template('cart1.html')
+
+@app.route('/cart2',  methods = ['GET','POST'])
+def cart2():
+    return render_template('cart2.html')
