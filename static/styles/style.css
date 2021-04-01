@@ -262,3 +262,7 @@ body {
 .dropdown-item:hover {
   background-color: #FFD36E;
 }
+.box img{
+  max-width: 80%;
+  max-height: 80%;
+}
